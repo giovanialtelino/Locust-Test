@@ -6,4 +6,4 @@ sudo apt install python3-pip -y
 pip3 install locust
 git clone https://github.com/giovanialtelino/Locust-Test.git
 cd Locust-Test
-locust -f second.py --master --expect-workers 10
+locust -f second.py --worker --master-host=159.203.0.220
