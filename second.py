@@ -4,7 +4,7 @@ from locust.contrib.fasthttp import FastHttpUser
 import locust.stats
 
 class QuickStartUser(FastHttpUser):
-    wait_time = between(1, 10)
+    wait_time = between(1, 3)
 
     @task
     def project_page(self):
